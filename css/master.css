@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "headline";
+    src: url("../font/headline.ttf");
+}
+
+img.navbar-brand {
+  width: 70px;
+  height: 40px;
+  opacity: .8;
+  transform: scale3d(1,1,1);
+  transition: .25s ease-in-out;
+}
+
+img.navbar-brand:hover {
+  opacity: 1;
+  transform: scale3d(1.1,1.1,1);
+}
+
+a.nav-link:link {
+  transition: .25s ease-in-out;
+}
+
+.headline {
+  font-family: "headline";
+}
+
+.cdo-color {
+  background-color: #a90000
+}
+
+.lead {
+  letter-spacing: 2px;
+}
+
+#home {
+  background: url(../img/background.jpg) no-repeat 0% 13%;
+  background-size: 140%;
+}
+
+#about1 {
+  background: url(../img/about1.jpg) no-repeat 60% 33%;
+  background-size: 110%;
+}
+
+.trans-img {
+  height: 200px;
+}
+
+@media (max-width: 767px) {
+  #home {
+    background-position: 24% 60%;
+    background-size: auto;
+  }
+}
