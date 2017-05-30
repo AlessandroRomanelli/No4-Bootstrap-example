@@ -3,7 +3,7 @@
     src: url("../font/headline.ttf");
 }
 
-img.navbar-brand {
+.navbar-brand img {
   width: 70px;
   height: 40px;
   opacity: .8;
@@ -11,7 +11,7 @@ img.navbar-brand {
   transition: .25s ease-in-out;
 }
 
-img.navbar-brand:hover {
+.navbar-brand:hover img {
   opacity: 1;
   transform: scale3d(1.1,1.1,1);
 }
@@ -28,13 +28,33 @@ a.nav-link:link {
   background-color: #a90000
 }
 
-.lead {
-  letter-spacing: 2px;
+.blockquote-reverse {
+  border-color: #a90000;
+}
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: block;
+}
+
+#arsenal img {
+  height: auto;
 }
 
 #home {
   background: url(../img/background.jpg) no-repeat 0% 13%;
   background-size: 140%;
+}
+
+#home h1 {
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 5px rgba(0,0,0,.5);
+}
+
+#home p {
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,.6);
 }
 
 #about1 {
@@ -44,6 +64,18 @@ a.nav-link:link {
 
 .trans-img {
   height: 200px;
+}
+
+@media (max-width: 575px) {
+  #home h1 {
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 5px rgba(0,0,0,.5);
+  }
+
+  #home p {
+    letter-spacing: 0px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.6);
+  }
 }
 
 @media (max-width: 767px) {
