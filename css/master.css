@@ -3,6 +3,16 @@
     src: url("../font/headline.ttf");
 }
 
+body {
+  background: url(../img/background-wood.jpg) repeat-y center;
+  background-size: cover;
+}
+
+div.container {
+  background-color: rgba(255,255,255,.5);
+  box-shadow: 0 0 20px 25px rgba(0,0,0,.5)
+}
+
 .navbar-brand img {
   width: 70px;
   height: 40px;
@@ -43,7 +53,7 @@ a.nav-link:link {
 }
 
 #home {
-  background: url(../img/background.jpg) no-repeat 0% 13%;
+  background: url(../img/background.jpg) no-repeat 0% 0%;
   background-size: 140%;
 }
 
@@ -63,6 +73,8 @@ a.nav-link:link {
 }
 
 .trans-img {
+  border-top: solid 1px #292b2c;
+  border-bottom: solid 1px #292b2c;
   height: 200px;
 }
 
