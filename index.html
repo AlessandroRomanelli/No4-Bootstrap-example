@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <title>No.4 Commando Website</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/master.css">
@@ -27,7 +27,7 @@
             <a class="nav-link" href="#operations">Operations</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#gallery">Gallery</a>
+            <a class="nav-link" href="#gallery">Structure</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#arsenal">Arsenal</a>
@@ -37,9 +37,16 @@
           </li>
         </ul>
       </div>
-
+      <div>
+        <div class="pause mr-4" onclick="togglePlayback()"></div>
+      </div>
       <a href="https://arma3.com/" target="_blank" class="navbar-brand mx-auto d-inline-block align-top float-md-right"><img src="img/a3logo.png"></img></a>
     </nav>
+
+    <!-- Player -->
+    <audio id="player" autoplay onloadeddata="setHalfVolume()">
+      <source src="we_ll_meet_again.mp3" type="audio/mp3">
+    </audio>
 
     <!-- Modal -->
     <div class="modal fade px-0" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
@@ -63,7 +70,7 @@
           <h1 class="display-1 headline mb-0 px-3 hidden-xs-down">No.<span style="color: #a90000">4</span> Commando</h1>
           <h1 class="display-3 headline mb-0 px-1 hidden-sm-up">No.<span style="color: #a90000">4</span> Commando</h1>
           <p class="lead mt-0">British WW2 Relaxed Milsim Unit</p>
-          <a role="button" href="#" class="btn btn-outline-danger btn-md" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/GuvjeDnOB1E">Unit Trailer</a>
+          <a role="button" href="#" class="btn btn-outline-danger btn-md" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/GuvjeDnOB1E"  onclick="pauseSong()">Unit Trailer</a>
         </div>
       </div>
       <!-- /Jumbotron -->
@@ -79,8 +86,8 @@
             <footer class="blockquote-footer pr-md-5"><cite title="Source Title">Winston Churchill</cite></footer>
           </blockquote>
         </div>
-        <div id="about-img" class="img img-fluid trans-img mb-3 col-12"></div>
-        <div id="about-text" class="px-3 px-lg-5">
+        <div id="about-img1" class="img img-fluid trans-img mb-3"></div>
+        <div class="about-text px-3 px-lg-5">
           <div class="container-fluid px-0">
             <div class="row">
               <div class="col-lg-4">
@@ -91,8 +98,20 @@
                 <h4 class="py-2">What we do</h4>
                 <p class="text-justify pl-1">
                   Training in the Scottish Highlands to beach landings in Normandy to Norway, ambushing enemies using iconic gear, weapons and vehicles provided by the mods we use as well as our own exclusive content. Sniper nests in clock towers to concrete pillbox's on open fields with para-drops into flak filled skies. The missions and scenarios are endless and we aim to replicate the conflict as closely to real life as possible whilst also keeping the relaxed aspect.</p>
-                </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-text px-3 px-lg-5">
+          <div class="container-fluid px-0">
+            <div class="row">
+              <div class="col-md-7 col-lg-8">
+                <h4 class="py-2">What makes us so special?</h4>
+                <p class="text-justify pl-1">
+                  When somebody joins the No.4 Commando unit he's already guaranteed a unique, immersive experience. Fight the <em>Evil-doers</em> back into their holes using the finely recreated historical gear, weapons and vehicles of the WW2 Era. Gun down an entire enemy squad firing a Bren gun, or sneak up a patrol with silenced Sten guns, or paradrop into the most iconic scenario whilst divisions of tanks support your advanced deep within enemy territory. The possibilities are endless. Whilst on one side our unit is supported by skilled developers and creators, it also has great mission makers, who make for an extra-degree of immersion when playing an operation. </p>
+              </div>
+              <div id="about-img2" class="col-md-5 col-lg-4 img mb-3 hidden-sm-down"></div>
+            </div>
           </div>
         </div>
           <!-- /About -->

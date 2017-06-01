@@ -78,3 +78,29 @@ $(document).ready(function(){
     }, 300);
   });
 });
+
+function pauseSong() {
+  var myAudio = document.getElementById("player");
+  $("div.pause").removeClass("pause").addClass("play");
+  myAudio.pause();
+}
+
+function playSong() {
+  var myAudio = document.getElementById("player");
+  $("div.play").removeClass("play").addClass("pause");
+  myAudio.play();
+}
+
+function togglePlayback() {
+  var myAudio = document.getElementById("player");
+  if (myAudio.paused) {
+    playSong();
+  } else {
+    pauseSong();
+  }
+}
+
+function setHalfVolume() {
+    var myAudio = document.getElementById("player");
+    myAudio.volume = 0.1; //Changed this to 0.5 or 50% volume since the function is called Set Half Volume ;)
+}
