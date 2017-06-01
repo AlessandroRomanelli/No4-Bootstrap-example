@@ -15,8 +15,6 @@
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
-
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mr-auto mt-2 mt-md-0">
           <li class="nav-item">
@@ -45,45 +43,62 @@
     <!-- !Navbar -->
       <!-- Jumbotron -->
       <div id="home" class="jumbotron jumbotron-fluid text-white cdo-color mb-0">
-        <div class="text-center pt-5">
-          <h1 class="display-3 headline mb-0 px-3">No.<span style="color: #a90000">4</span> Commando</h1>
+        <div class="col align-self-center text-center">
+          <h1 class="display-1 headline mb-0 px-3 hidden-xs-down">No.<span style="color: #a90000">4</span> Commando</h1>
+          <h1 class="display-3 headline mb-0 px-1 hidden-sm-up">No.<span style="color: #a90000">4</span> Commando</h1>
           <p class="lead mt-0">British WW2 Relaxed Milsim Unit</p>
-        </div>
-        <div class="btn-group mt-4 d-block mx-auto text-center" role="group" aria-label="Basic example">
-          <button type="button" class="btn btn-secondary btn-md">Join Now</button>
-          <a href="#speakers" class="btn btn-secondary btn-md">Learn More</a>
+          <a role="button" href="#" class="btn btn-outline-danger btn-md" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/GuvjeDnOB1E">Unit Trailer</a>
         </div>
       </div>
       <!-- /Jumbotron -->
+
+      <!-- Modal -->
+      <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-body">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <div>
+                          <iframe width="100%" height="350" src="" allowFullscreen></iframe>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- /Modal -->
 
       <!-- About -->
       <div id="about" class="bg-inverse text-white py-1 mb-4">
         <h1 class="headline pl-3">About us</h1>
       </div>
-        <div class="row mb-3 mr-1 px-3">
+        <div class="mb-3 mr-1 pr-lg-5">
           <blockquote class="blockquote blockquote-reverse">
             <p class="col-lg-9 push-lg-3 mb-0">«We shall fight on the beaches, we shall fight on the landing grounds, we shall fight in the fields and in the streets, we shall fight in the hills, we shall never surrender!»</p>
-            <footer class="blockquote-footer"><cite title="Source Title">Winston Churchill</cite></footer>
+            <footer class="blockquote-footer pr-md-5"><cite title="Source Title">Winston Churchill</cite></footer>
           </blockquote>
         </div>
         <div id="about-img" class="img img-fluid trans-img mb-3 col-12"></div>
-        <div id="about-text" class="row px-5">
-          <div class="col-lg-4">
-            <h4 class="py-2">Historical Contest</h4>
-            <p class="text-justify pl-1">The British Commandos were formed during the Second World War in June 1940, following a request from the Prime Minister of the United Kingdom, Winston Churchill, for a force that could carry out hard hitting attacks on German positions on any front.</p>
+        <div id="about-text" class="px-xs-3 px-lg-5">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-4">
+                <h4 class="py-2">Historical Contest</h4>
+                <p class="text-justify pl-1">The British Commandos were formed during the Second World War in June 1940, following a request from the Prime Minister of the United Kingdom, Winston Churchill, for a force that could carry out hard hitting attacks on German positions on any front.</p>
+              </div>
+              <div class="col-lg-8">
+                <h4 class="py-2">What we do</h4>
+                <p class="text-justify pl-1">
+                  Training in the Scottish Highlands to beach landings in Normandy to Norway, ambushing enemies using iconic gear, weapons and vehicles provided by the mods we use as well as our own exclusive content. Sniper nests in clock towers to concrete pillbox's on open fields with para-drops into flak filled skies. The missions and scenarios are endless and we aim to replicate the conflict as closely to real life as possible whilst also keeping the relaxed aspect.</p>
+                </div>
+              </div>
           </div>
-          <div class="col-lg-8">
-            <h4 class="py-2">What we do</h4>
-            <p class="text-justify pl-1">
-              Training in the Scottish Highlands to beach landings in Normandy to Norway, ambushing enemies using iconic gear, weapons and vehicles provided by the mods we use as well as our own exclusive content. Sniper nests in clock towers to concrete pillbox's on open fields with para-drops into flak filled skies. The missions and scenarios are endless and we aim to replicate the conflict as closely to real life as possible whilst also keeping the relaxed aspect.</p>
-            </div>
-          </div>
+        </div>
           <!-- /About -->
         <div id="operations" class="bg-inverse text-white py-1 mt-4">
             <h1 class="headline pl-3">Operations</h1>
         </div>
         <div id="operations-cards">
-          <div class="row px-5 mt-4">
+          <div class="px-lg-5 px-xs-3 mt-4">
             <div class="card-group">
               <div class="card col-md-4 px-0">
                 <img class="card-img-top d-block" src="img/scotland.jpg" alt="Card image cap">
@@ -120,7 +135,7 @@
               </div>
             </div>
           </div>
-          <div class="row px-5 mt-4">
+          <div class="px-lg-5 px-xs-3 mt-4">
             <div class="card-group">
               <div class="card col-md-4 px-0">
                 <img class="card-img-top" src="img/norway.jpg" alt="Card image cap">
@@ -136,7 +151,7 @@
               <div class="card col-md-4 px-0">
                 <img class="card-img-top" src="img/france.jpg" alt="Card image cap">
                 <div class="card-block">
-                  <h4 class="card-title">Fall of France</h4>
+                  <h4 class="card-title">Invasion of France</h4>
                   <small class="text-muted">10th May &#8212; 25th June 1940</small>
                   <p class="card-text text-justify">Allies were all caught by surprise when the German Army unexpectedly pushed through and conquered the Netherlands, Luxemburg and Belgium and attacked the French front on their less covered side. The BEF fought bravely through the Ardennes but was forced to retreat to Dunkirk and leave the mainland.</p>
                 </div>
@@ -147,7 +162,7 @@
               <div class="card col-md-4 px-0">
                 <img class="card-img-top" src="img/africa.jpg" alt="Card image cap">
                 <div class="card-block">
-                  <h4 class="card-title">North Africa Campaign</h4>
+                  <h4 class="card-title">Invasion of Lybia</h4>
                   <small class="text-muted">10th June 1940 &#8212; 13th May 1943</small>
                   <p class="card-text text-justify">When the Soviets invaded Finland in the late '40, the British Commandos were immediately dispatched to help the Finnish Troops. By the time a bigger Franco-British force could be deployed the war was already over: the Soviets had won but at a high cost of casualties. </p>
                 </div>
@@ -231,8 +246,8 @@
 <!-- /Arsenal -->
 
       <!-- Footer -->
-      <div class="row py-3">
-        <div class="col-md-5 push-md-7 text-md-right pr-5">
+      <div class="py-3">
+        <div class="col-md-5 text-sm-center push-md-7 text-md-right pr-lg-5">
           <small>&copy; Alessandro Romanelli 2017</small>
         </div>
       </div>

@@ -13,8 +13,13 @@ body {
 }
 
 div.container {
+  padding-top: 60px;
   background-color: rgba(255,255,255,.5);
   box-shadow: 0 0 20px 25px rgba(0,0,0,.5)
+}
+
+.navbar {
+  box-sizing: border-box;
 }
 
 .navbar-brand img {
@@ -43,6 +48,24 @@ h1.headline {
   background-color: #a90000
 }
 
+.btn-outline-danger {
+  color: white;
+  background-color: #292b2c;
+  text-shadow: 0 0 2px rgba(0,0,0,.75);
+  border-color: #a90000;
+}
+
+.btn-outline-danger:focus {
+  color: white;
+}
+
+
+
+.btn-outline-danger:hover {
+  background-color: #a90000;
+  border-color: #292b2c;
+}
+
 .blockquote-reverse {
   border-color: #292b2c;
 }
@@ -69,8 +92,8 @@ h1.headline {
 }
 
 #home {
-  background: url(../img/background.jpg) no-repeat 0% 0%;
-  background-size: 140%;
+  background: url(../img/background-1.jpg) no-repeat 0% 66%;
+  background-size: cover;
 }
 
 #home h1 {
@@ -108,8 +131,6 @@ h1.headline {
 
 @media (max-width: 767px) {
   #home {
-    background-position: 24% 60%;
-    background-size: auto;
   }
 }
 
@@ -119,7 +140,7 @@ html {
 
 @include media-breakpoint-up(sm) {
   html {
-    font-size: 16px;
+    font-size: 1px;
   }
 }
 
