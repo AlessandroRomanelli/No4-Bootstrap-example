@@ -11,7 +11,7 @@
   </head>
   <body data-spy="scroll" data-target="#navbarNav" data-offset="50">
     <!-- Navbar -->
-    <nav class="navbar navbar-toggleable-sm navbar-inverse bg-inverse fixed-top container">
+    <nav class="navbar navbar-toggleable-sm navbar-inverse bg-inverse fixed-top container pl-lg-5">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -53,13 +53,13 @@
       <!-- /Jumbotron -->
 
       <!-- Modal -->
-      <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+      <div class="modal fade px-0" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
           <div class="modal-dialog">
               <div class="modal-content">
-                  <div class="modal-body">
+                  <div class="modal-body embed-responsive embed-responsive-16by9">
                       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                       <div>
-                          <iframe width="100%" height="350" src="" allowFullscreen></iframe>
+                          <iframe class="embed-responsive-item" src="" allowFullscreen></iframe>
                       </div>
                   </div>
               </div>
@@ -68,18 +68,18 @@
       <!-- /Modal -->
 
       <!-- About -->
-      <div id="about" class="bg-inverse text-white py-1 mb-4">
-        <h1 class="headline pl-3">About us</h1>
+      <div id="about" class="bg-inverse text-white py-1 mb-4 pl-3 pl-lg-5">
+        <h1 class="headline">About us</h1>
       </div>
-        <div class="mb-3 mr-1 pr-lg-5">
+        <div class="mb-3 mr-1 pr-lg-5 pr-1">
           <blockquote class="blockquote blockquote-reverse">
             <p class="col-lg-9 push-lg-3 mb-0">«We shall fight on the beaches, we shall fight on the landing grounds, we shall fight in the fields and in the streets, we shall fight in the hills, we shall never surrender!»</p>
             <footer class="blockquote-footer pr-md-5"><cite title="Source Title">Winston Churchill</cite></footer>
           </blockquote>
         </div>
         <div id="about-img" class="img img-fluid trans-img mb-3 col-12"></div>
-        <div id="about-text" class="px-xs-3 px-lg-5">
-          <div class="container-fluid">
+        <div id="about-text" class="px-3 px-lg-5">
+          <div class="container-fluid px-0">
             <div class="row">
               <div class="col-lg-4">
                 <h4 class="py-2">Historical Contest</h4>
@@ -94,40 +94,50 @@
           </div>
         </div>
           <!-- /About -->
-        <div id="operations" class="bg-inverse text-white py-1 mt-4">
+        <div id="operations" class="bg-inverse text-white py-1 mt-4  pl-3 pl-lg-5">
             <h1 class="headline pl-3">Operations</h1>
         </div>
         <div id="operations-cards">
-          <div class="px-lg-5 px-xs-3 mt-4">
+          <div class="px-3 px-lg-5 mt-4">
+            <h5>Here you can see the current status of our activities:</h5>
+            <p>(You can click on the images to learn more about the campaign)</p>
+          </div>
+          <div class="px-lg-5 px-3 mt-4">
             <div class="card-group">
               <div class="card col-md-4 px-0">
-                <img class="card-img-top d-block" src="img/scotland.jpg" alt="Card image cap">
+                <a data-toggle="collapse" href="#predeployment" aria-expanded="false"><img class="card-img-top d-block" src="img/thumbnails/scotland.jpg" alt="Card image cap"></a>
                 <div class="card-block">
                   <h4 class="card-title">Pre-Deployment</h4>
-                  <small class="text-muted">Between campaigns</small>
-                  <p class="card-text text-justify">The unit undergoes periods of intensive training to perfect and fine-tune its elements. Commandos trained in the Scottish Highlands before being deployed in any of their major campaigns.</p>
-                </div>
-                <div class="card-footer">
-                  <small class="badge badge-warning">ONGOING</small>
-                </div>
-              </div>
-              <div class="card col-md-4 px-0">
-                <img class="card-img-top" src="img/poland.jpg" alt="Card image cap">
-                <div class="card-block">
-                  <h4 class="card-title">Polish Campaign</h4>
-                  <small class="text-muted">1st September &#8212; 6th October 1939</small>
-                  <p class="card-text text-justify">Nazi Germany invaded Poland in late '39. British Commandos were deployed in Poland to lay groundwork for the greater British Expeditionary Force to step in. The BEF never got there: the opening of a second, opposite front by the Soviets caused the Commandos evaucation and Poland's surrender.</p>
+                  <div id="predeployment" class="collapse">
+                    <small class="text-muted">Between campaigns</small>
+                    <p class="card-text text-justify">The unit undergoes periods of intensive training to perfect and fine-tune its elements. Commandos trained in the Scottish Highlands before being deployed in any of their major campaigns.</p>
+                  </div>
                 </div>
                 <div class="card-footer">
                   <small class="badge badge-success">COMPLETED</small>
                 </div>
               </div>
               <div class="card col-md-4 px-0">
-                <img class="card-img-top" src="img/finland.jpg" alt="Card image cap">
+                <a data-toggle="collapse" href="#poland" aria-expanded="false"><img class="card-img-top" src="img/thumbnails/poland.jpg" alt="Card image cap"></a>
+                <div class="card-block">
+                  <h4 class="card-title">Polish Campaign</h4>
+                  <div id="poland" class="collapse">
+                    <small class="text-muted">1st September &#8212; 6th October 1939</small>
+                    <p class="card-text text-justify">Nazi Germany invaded Poland in late '39. British Commandos were deployed in Poland to lay groundwork for the greater British Expeditionary Force to step in. The BEF never got there: the opening of a second, opposite front by the Soviets caused the Commandos evaucation and Poland's surrender.</p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <small class="badge badge-success">COMPLETED</small>
+                </div>
+              </div>
+              <div class="card col-md-4 px-0">
+                <a data-toggle="collapse" href="#finland" aria-expanded="false"><img class="card-img-top" src="img/thumbnails/finland.jpg" alt="Card image cap"></a>
                 <div class="card-block">
                   <h4 class="card-title">Finnish Campaign</h4>
-                  <small class="text-muted">30th November 1939 &#8212; 13th March 1940</small>
-                  <p class="card-text text-justify">When the Soviets invaded Finland in the late '40, the British Commandos were immediately dispatched to help the Finnish Troops. By the time a bigger Franco-British force could be deployed the war was already over: the Soviets had won but that came at a price of heavy casualties. </p>
+                  <div id="finland" class="collapse">
+                    <small class="text-muted">30th November 1939 &#8212; 13th March 1940</small>
+                    <p class="card-text text-justify">When the Soviets invaded Finland in the late '40, the British Commandos were immediately dispatched to help the Finnish Troops. By the time a bigger Franco-British force could be deployed the war was already over: the Soviets had won but that came at a price of heavy casualties. </p>
+                  </div>
                 </div>
                 <div class="card-footer">
                   <small class="badge badge-success">COMPLETED</small>
@@ -135,39 +145,88 @@
               </div>
             </div>
           </div>
-          <div class="px-lg-5 px-xs-3 mt-4">
+          <div class="px-lg-5 px-3 mt-4">
             <div class="card-group">
               <div class="card col-md-4 px-0">
-                <img class="card-img-top" src="img/norway.jpg" alt="Card image cap">
+                <a data-toggle="collapse" href="#norway" aria-expanded="false"><img class="card-img-top" src="img/thumbnails/norway.jpg" alt="Card image cap"></a>
                 <div class="card-block">
                   <h4 class="card-title">Norwegian Campaign</h4>
-                  <small class="text-muted">9th April &#8212; 10th June 1940</small>
-                  <p class="card-text text-justify">British and French forces came to Norway's aid with an expeditionary force in early April. Despite the successes of the Commandos in the northern regions, German forces eventually took over the country in 62 days. Once again the German Army had proved their strenght and ruthlessness.</p>
+                  <div id="norway" class="collapse">
+                    <small class="text-muted">9th April &#8212; 10th June 1940</small>
+                    <p class="card-text text-justify">British and French forces came to Norway's aid with an expeditionary force in early April. Despite the successes of the Commandos in the northern regions, German forces eventually took over the country in 62 days. Once again the German Army had proved their strenght and ruthlessness.</p>
+                  </div>
                 </div>
                 <div class="card-footer">
                   <small class="badge badge-success">COMPLETED</small>
                 </div>
               </div>
               <div class="card col-md-4 px-0">
-                <img class="card-img-top" src="img/france.jpg" alt="Card image cap">
+                <a data-toggle="collapse" href="#france" aria-expanded="false"><img class="card-img-top" src="img/thumbnails/france.jpg" alt="Card image cap"></a>
                 <div class="card-block">
                   <h4 class="card-title">Invasion of France</h4>
-                  <small class="text-muted">10th May &#8212; 25th June 1940</small>
-                  <p class="card-text text-justify">Allies were all caught by surprise when the German Army unexpectedly pushed through and conquered the Netherlands, Luxemburg and Belgium and attacked the French front on their less covered side. The BEF fought bravely through the Ardennes but was forced to retreat to Dunkirk and leave the mainland.</p>
+                  <div id="france" class="collapse">
+                    <small class="text-muted">10th May &#8212; 25th June 1940</small>
+                    <p class="card-text text-justify">Allies were all caught by surprise when the German Army unexpectedly pushed through and conquered the Netherlands, Luxemburg and Belgium and attacked the French front on their less covered side. The BEF fought bravely through the Ardennes but was forced to retreat to Dunkirk and leave the mainland.</p>
+                  </div>
                 </div>
                 <div class="card-footer">
                   <small class="badge badge-success">COMPLETED</small>
                 </div>
               </div>
               <div class="card col-md-4 px-0">
-                <img class="card-img-top" src="img/africa.jpg" alt="Card image cap">
+                <a data-toggle="collapse" href="#africa" aria-expanded="false"><img class="card-img-top" src="img/thumbnails/africa.jpg" alt="Card image cap"></a>
                 <div class="card-block">
-                  <h4 class="card-title">Invasion of Lybia</h4>
-                  <small class="text-muted">10th June 1940 &#8212; 13th May 1943</small>
-                  <p class="card-text text-justify">When the Soviets invaded Finland in the late '40, the British Commandos were immediately dispatched to help the Finnish Troops. By the time a bigger Franco-British force could be deployed the war was already over: the Soviets had won but at a high cost of casualties. </p>
+                  <h4 class="card-title">Libyan Desert Campaign</h4>
+                  <div id="africa" class="collapse">
+                    <small class="text-muted">10th June 1940 &#8212; 13th May 1943</small>
+                    <p class="card-text text-justify">The Italians sided with Germany and declared war on the Allies, few days later the British Army was already crossing the border from Egypt into Lybia, where Italy had its colonial interests. It was the start of a series of brutal fights, before the formidable <strong>Afrika Korps</strong> stepped in, led by Erwin Rommel, known as <em>"The Desert Fox"</em>.</p>
+                  </div>
                 </div>
                 <div class="card-footer">
                   <small class="badge badge-warning">ONGOING</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="px-lg-5 px-3 mt-4">
+            <div class="card-group">
+              <div class="card col-md-4 px-0">
+                <a data-toggle="collapse" href="#italy" aria-expanded="false"><img class="card-img-top" src="img/thumbnails/italy.jpg" alt="Card image cap"></a>
+                <div class="card-block">
+                  <h4 class="card-title">Italian Campaign</h4>
+                  <div id="italy" class="collapse">
+                    <small class="text-muted">10th July 1943 &#8212; 2nd May 1945</small>
+                    <p class="card-text text-justify">Starting with the invasion of Sicily, the Italian campaign was carried out by the Allied coalition and led to the arrest of Benito Mussolini, known as <em>"Il Duce"</em> or <em>"Dux"</em> and Italy's surrender. The Axis lost a valuable ally in the war but it still wasn't giving up on the buffer ground that Italy represented, hence the German occupation of Italy began.</p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <small class="badge badge-primary">PLANNED</small>
+                </div>
+              </div>
+              <div class="card col-md-4 px-0">
+                <a data-toggle="collapse" href="#western" aria-expanded="false"><img class="card-img-top" src="img/thumbnails/western.jpg" alt="Card image cap"></a>
+                <div class="card-block">
+                  <h4 class="card-title">Western Europe Campaign</h4>
+                  <div id="western" class="collapse">
+                    <small class="text-muted">6 June 1944 &#8212; 8 May 1945</small>
+                    <p class="card-text text-justify">The second part of the Western Campaign takes place years after the capitulation of France and sees the Allies making their comeback. Starting off from the Normandy's landings, back through France, Belgium, the Netherlands and all the way to Berlin where the German Army prepared its last stand.</p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <small class="badge badge-danger">TO BE ANNOUNCED</small>
+                </div>
+              </div>
+              <div class="card col-md-4 px-0">
+                <a data-toggle="collapse" href="#eastern" aria-expanded="false"><img class="card-img-top" src="img/thumbnails/eastern.jpg" alt="Card image cap"></a>
+                <div class="card-block">
+                  <h4 class="card-title">Eastern Europe Campaign</h4>
+                  <div id="eastern" class="collapse">
+                    <small class="text-muted">22nd June 1941 &#8212; 9th May 1945</small>
+                    <p class="card-text text-justify">The Eastern Front was active throughout most of the war. The UK took initially part to the fight only in the form of Lend-Lease programmes but later decided to secretly send the Commandos to turn the tides in the Soviets' favor.</p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <small class="badge badge-danger">TO BE ANNOUNCED</small>
                 </div>
               </div>
             </div>

@@ -47,27 +47,34 @@ $('#navbarNav ul li a[href*="#"]')
     }
   });
 
-  function autoPlayYouTubeModal(){
-    var trigger = $("body").find('[data-toggle="modal"]');
-    trigger.click(function() {
-      var theModal = $(this).data( "target" ),
-      videoSRC = $(this).attr( "data-theVideo" ),
-      videoSRCauto = videoSRC+"?autoplay=1" ;
-      $(theModal+' iframe').attr('src', videoSRCauto);
-      $(theModal+' button.close').click(function () {
-          $(theModal+' iframe').attr('src', videoSRC);
-      });
+function autoPlayYouTubeModal(){
+  var trigger = $("body").find('[data-toggle="modal"]');
+  trigger.click(function() {
+    var theModal = $(this).data( "target" ),
+    videoSRC = $(this).attr( "data-theVideo" ),
+    videoSRCauto = videoSRC+"?autoplay=1" ;
+    $(theModal+' iframe').attr('src', videoSRCauto);
+    $(theModal+' button.close').click(function () {
+        $(theModal+' iframe').attr('src', videoSRC);
     });
-  }
-
-  $('#videoModal').on('hide.bs.modal', function(e) {
-    var $if = $(e.delegateTarget).find('iframe');
-    var src = $if.attr("src");
-    $if.attr("src", '/empty.html');
-    $if.attr("src", "");
   });
+}
+
+$('#videoModal').on('hide.bs.modal', function(e) {
+  var $if = $(e.delegateTarget).find('iframe');
+  var src = $if.attr("src");
+  $if.attr("src", '/empty.html');
+  $if.attr("src", "");
+});
 
 
-  $(document).ready(function(){
+$(document).ready(function(){
   autoPlayYouTubeModal();
+
+  $('#operations-cards a').blur(function() {
+    setTimeout(() => {
+      $(this).addClass('collapsed');
+      $(this).next().children().last().collapse('hide');
+    }, 300);
+  });
 });
