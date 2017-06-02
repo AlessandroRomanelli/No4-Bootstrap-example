@@ -1,5 +1,6 @@
 @-webkit-keyframes flip-in-hor-bottom{0%{-webkit-transform:rotateX(80deg);transform:rotateX(80deg);opacity:0}100%{-webkit-transform:rotateX(0);transform:rotateX(0);opacity:1}}@keyframes flip-in-hor-bottom{0%{-webkit-transform:rotateX(80deg);transform:rotateX(80deg);opacity:0}100%{-webkit-transform:rotateX(0);transform:rotateX(0);opacity:1}}
 @-webkit-keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+@-webkit-keyframes color-change-3x{0%{background:rgba(0,0,0,.3)}50%{background:transparent}100%{background:rgba(0,0,0,.3)}}@keyframes color-change-3x{0%{background:rgba(0,0,0,.3)}50%{background:transparent}100%{background:rgba(0,0,0,.3)}}
 
 @font-face {
     font-family: "headline";
@@ -24,9 +25,24 @@ body {
   padding: 0 !important;
   background: url(../img/background-wood.jpg) repeat-y 50% 0%;
   background-size: 100%;
+  z-index: -1;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+	-webkit-animation: color-change-3x 6s linear infinite alternate both;
+	        animation: color-change-3x 6s linear infinite alternate both;
+
 }
 
 div.container {
+  z-index: 1;
   padding-top: 60px;
   background-color: rgba(255,255,255,.5);
   box-shadow: 0 0 20px 25px rgba(0,0,0,.5)
