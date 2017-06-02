@@ -172,6 +172,26 @@ h1.headline {
               linear-gradient(180deg, rgba(0, 0, 0, 0.5) -10%, transparent 28%);
 }
 
+#useful ul {
+  list-style: none;
+}
+
+#useful img {
+  height: 50px;
+  width: 50px;
+  opacity: .5;
+  transition: .25s ease-in-out;
+}
+
+#useful a:hover img{
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+#useful h3 {
+  line-height: 50px;
+}
+
 .trans-img {
   border-top: solid 1px #292b2c;
   border-bottom: solid 1px #292b2c;
@@ -196,6 +216,9 @@ h1.headline {
 }
 
 @media (max-width: 767px) {
+  #useful li {
+    display: inline-block;
+  }
   #home {
   }
 

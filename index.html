@@ -8,6 +8,12 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/master.css">
+    <script type="text/javascript">
+      function setHalfVolume() {
+          var myAudio = document.getElementById("player");
+          myAudio.volume = 0.1; //Changed this to 0.5 or 50% volume since the function is called Set Half Volume ;)
+      }
+    </script>
   </head>
   <body data-spy="scroll" data-target="#navbarNav" data-offset="50">
     <!-- Navbar -->
@@ -332,10 +338,10 @@
 </div> -->
 <!-- /Arsenal -->
 
-      <div id="join" class="bg-inverse text-white py-1 mt-4  pl-3 pl-lg-5">
+      <div id="join" class="bg-inverse text-white py-1 mt-5  pl-3 pl-lg-5">
         <h1 class="headline">Join the unit</h1>
       </div>
-      <div id="join-img1" class="img img-fluid trans-img mb-3"></div>
+      <div id="join-img1" class="img img-fluid trans-img mb-4"></div>
       <div class="about-text px-3 px-lg-5">
         <div class="container-fluid px-0">
           <div class="row">
@@ -344,7 +350,7 @@
               <ol>
                 <li class="text-justify"><strong>Age</strong>: must be at least <strong>16 years old</strong> or older, anyone below that must have special acception into the unit;</li>
                 <li class="text-justify"><strong>Attendance</strong>: should be able to attend at least <strong>two operations per week</strong> in a normal situation;</li>
-                <li class="text-justify"><strong>Exclusivity</strong>: appliants must not be part of other units upon joining us;</li>
+                <li class="text-justify"><strong>Exclusivity</strong>: applicants must not be part of other units upon joining;</li>
               </ol>
             </div>
             <div class="col-sm-4">
@@ -359,12 +365,12 @@
             </div>
           </div>
           <div class="row">
-            <div class="col">
+            <div class="col my-4">
               <hr>
             </div>
           </div>
           <div class="row">
-            <div class="col-sm-8">
+            <div class="col-md-8">
               <h4 class="py-2">How to enlist:</h4>
               <ol>
                 <li>Contact one of the unit leaders by adding them on Steam or joining the Teamspeak server;</li>
@@ -378,7 +384,7 @@
                   <li>Append the <strong>[No.4]</strong> tag to your steam name;</li>
                 </ul>
                 <br>
-                <li>Attend a Basic Combat Training (BCT);</li>
+                <li>Attend a Basic Combat Training (<strong>BCT</strong>);</li>
                 <br>
                 <li>Attend an unit operation.</li>
               </ol>
@@ -387,8 +393,28 @@
               <p class="text-justify pr-md-5">If you would like to join our unit or make any enquiries into what we do then feel free to add one of our friendly leaders using Steam or join our Teamspeak at any time.</p>
               <p></p>
             </div>
-            <div class="col-sm-4">
-
+            <div id="useful" class="col-md-4 text-center text-md-left">
+              <h4 class="py-2 mb-4">Useful links:</h4>
+              <ul class="pl-0">
+                <li class="pl-md-3 media mb-4">
+                  <a class="d-flex" href="http://steamcommunity.com/groups/No4Commando"><img class="mr-3" src="img/steam-square.svg" alt="">
+                  <div class="media-body">
+                    <h3 class="lead hidden-sm-down my-auto">Steam Group</h3 class="lead">
+                  </div></a>
+                </li>
+                <li class="pl-md-3 media mb-4">
+                  <a class="d-flex" href="https://discord.gg/GxTEsRb"><img class="mr-3" src="img/discord.svg" alt="">
+                  <div class="media-body">
+                    <h3 class="lead hidden-sm-down my-auto">Discord Server</h3 class="lead">
+                  </div></a>
+                </li>
+                <li class="pl-md-3 media">
+                  <a class="d-flex" href="ts3server://85.236.101.154/?port=11727&nickname=Web Guest"><img class="mr-3" src="img/ts3.png" alt="">
+                  <div class="media-body">
+                    <h3 class="lead hidden-sm-down my-auto">Join Teamspeak 3</h3 class="lead">
+                  </div></a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -396,7 +422,7 @@
 
 
       <!-- Footer -->
-      <div class="py-3 mt-5 bg-inverse text-white">
+      <div class="py-3 mt-3 bg-inverse text-white">
         <div class="col-md-5 text-sm-center push-md-7 text-md-right pr-lg-5">
           <small>&copy; Alessandro Romanelli 2017</small>
         </div>
