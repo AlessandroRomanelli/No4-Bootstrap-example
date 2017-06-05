@@ -7,17 +7,30 @@
     src: url("../font/headline.ttf");
 }
 
-a:link {
+.container a:link {
   color: #a90000;
   transition: .25s ease-in-out
 }
 
-a:visited {
+.container a:visited {
   color: #a90000;
 }
 
-a:hover {
+.container a:hover {
   color: #d03d3d;
+}
+
+#home a:link {
+  color: #fff;
+  transition: .25s ease-in-out
+}
+
+#home a:visited {
+  color: #fff;
+}
+
+#home a:hover {
+  color: #fff;
 }
 
 li {
@@ -172,6 +185,11 @@ h1.headline {
 #about-img2 {
   background: url(../img/no4.png) no-repeat 50% 50%;
   background-size: 55%;
+}
+
+#parachutes {
+  background: url(../img/para.jpg) no-repeat 40% 50%;
+  background-size: 150%;
 }
 
 #join-img1 {
