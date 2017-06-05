@@ -235,9 +235,19 @@ h1.headline {
   background-size: 55%;
 }
 
+#about-img3 {
+  background: url(../img/parade.jpg) no-repeat 50% 50%;
+  background-size: 100%;
+}
+
+#donation-img {
+  background: url(../img/helping.jpg) no-repeat 50% 50%;
+  background-size: 100%;
+}
+
 #parachutes {
   background: url(../img/para.jpg) no-repeat 40% 50%;
-  background-size: 150%;
+  background-size: 100%;
 }
 
 #join-img1 {
