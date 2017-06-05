@@ -65,6 +65,54 @@ div.container {
   box-shadow: 0 0 20px 25px rgba(0,0,0,.5)
 }
 
+.carousel-control-prev,
+.carousel-control-next,
+.carousel-indicators,
+.carousel-caption {
+  z-index: 10;
+}
+
+.carousel-item img {
+  z-index: -1;
+}
+
+.carousel-caption h5 {
+  cursor: default;
+  text-shadow: 1px  1px  0 #292b2c,
+               1px  0    0 #292b2c,
+               1px  -1px 0 #292b2c,
+               0    1px  0 #292b2c,
+               0    -1px 0 #292b2c,
+               -1px 1px  0 #292b2c,
+               -1px 0    0 #292b2c,
+               -1px -1px 0 #292b2c,
+               0    0    10px rgba(0,0,0,.75);
+}
+
+.carousel-caption a {
+  border-color: #292b2c;
+}
+
+.carousel-caption a:hover {
+  border-color: #a90000;
+}
+
+#arsenal div.container {
+  position: relative;
+}
+
+#arsenal div.container::before {
+  pointer-events: none;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.4) 0%, transparent 20%, transparent 80%, rgba(0, 0, 0, 0.4) 100%);
+}
+
 .navbar {
   box-sizing: border-box;
 }
